@@ -25,7 +25,7 @@ module.exports = http.createServer((req, res) => {
         const service = new blockchainService();
         resp = {
             "success": true,
-            "data": service.groupedTansactionLogs || []
+            "data": service.groupedTransactionLogs || []
         }
         res.end(JSON.stringify(resp));
     }
